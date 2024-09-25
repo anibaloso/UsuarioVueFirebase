@@ -6,15 +6,15 @@ import { getFirestore } from 'firebase/firestore'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDVjCPuxI-wRR3JoIfPDzcoZNggVBlkm8I",
-  authDomain: "ejercicio-crud-2a60b.firebaseapp.com",
-  projectId: "ejercicio-crud-2a60b",
-  storageBucket: "ejercicio-crud-2a60b.appspot.com",
-  messagingSenderId: "54940199199",
-  appId: "1:54940199199:web:be53695458df1c0503282a"
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const $db =getFirestore(app) 
+const $db = getFirestore(app)
 export { $db }

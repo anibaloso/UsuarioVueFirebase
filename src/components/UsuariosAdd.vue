@@ -9,12 +9,12 @@ const usuariosStore = useUsuariosStore()
 async function handleAddUsuario() {
     try {
         await usuariosStore.addUsuario({
-           nombre:nombreUsuario.value,
-           email:emailUsuario.value
-       })
-       nombreUsuario.value=''
-       emailUsuario.value=''
-        
+            nombre: nombreUsuario.value,
+            email: emailUsuario.value
+        })
+        nombreUsuario.value = ''
+        emailUsuario.value = ''
+
     } catch (error) {
         console.error('falla en la vista al agregar')
     }
@@ -37,3 +37,9 @@ async function handleAddUsuario() {
         </div>
     </div>
 </template>
+<style scoped>
+input {
+    border: 1px solid black;
+    margin: 3px;
+}
+</style>

@@ -1,8 +1,11 @@
 <script setup>
-</script>
+import UsuariosAdd from '@/components/UsuariosAdd.vue';
+import UsuariosList from '@/components/UsuariosList.vue';
 
+</script>
 <template>
-  <main>
-    <p></p>
-  </main>
+  <UsuariosList />
+  <UsuariosAdd />
 </template>
+
+<style scoped></style>
